@@ -1,6 +1,6 @@
 {
   "name": "@tuluffy/merge-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "merge helper for react",
   "main": "index.js",
   "scripts": {
