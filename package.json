@@ -1,0 +1,35 @@
+{
+  "name": "@tuluffy/merge-helper",
+  "version": "1.0.0",
+  "description": "merge helper for react",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "react",
+    "merge"
+  ],
+  "author": "tuluffy",
+  "license": "ISC",
+  "files": [
+    "index.js",
+    "lib/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "rollup": "^0.65.0",
+    "rollup-plugin-babel": "^4.0.2",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  }
+}
