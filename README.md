@@ -4,22 +4,28 @@ Note: 所有的组件符合es module规范，具体用法可以直接看源码.
 
 Installation
 
-    $ yarn add yotsuha -D
+    $ yarn add @tuluffy/merge-helper -D
     
 or  
 
-     $ npm i yotsuha --save
+     $ npm i @tuluffy/merge-helper --save
 
 
 
 Use
 
-    import {Alert} from 'yotsuha';
+    import { mergeState_base, 
+             mergeState_increase,
+             mergeState_negation} from 'yotsuha';
     
-    <Alert show={this.state.showAlert}
-           content='提示信息'
-           okText='知道了'
-           okCallback={() => console.log('do something...')}
-    />
+    this.setState(mergeState_base('username', 'tuluffy'))
+    
+    this.setState(mergeState_increase('count')) // +1
+    
+    this.setState(mergeState_increase('count', 2))  // +2
+    
+    this.setState(mergeState_negation('showLoading'))   // !prevStatus
+    
+    this.setState(mergeState_negation('showLoading', false))
 
 
